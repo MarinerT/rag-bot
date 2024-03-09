@@ -1,9 +1,7 @@
-import os
 from unittest.mock import patch, MagicMock
 import pytest
-import zipfile
 
-from chatbot import unzip_file, cbfs
+from chatbot import cbfs
 
 @pytest.fixture
 def mock_env(monkeypatch):
