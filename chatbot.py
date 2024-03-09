@@ -4,6 +4,7 @@ import zipfile
 import panel as pn
 import param
 from dotenv import find_dotenv, load_dotenv
+import openai
 from langchain.chains import ConversationalRetrievalChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
@@ -33,7 +34,7 @@ def load_db(file, chain_type, k):
     )
     docs = text_splitter.split_documents(documents)
     # define embedding
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(api_key=openai.api_key)
     # create vector database from data
     db = DocArrayInMemorySearch.from_documents(docs, embeddings)
     # define retriever

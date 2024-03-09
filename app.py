@@ -66,7 +66,7 @@ class Application(param.Parameterized):
     )
     submit_button = pn.widgets.Button(name="Submit API Key", button_type="primary")
     status_message = pn.pane.Markdown("Enter API Key to unlock full features.")
-    main_container = pn.Column()  # Container for dynamic content
+    main_container = pn.Column()  
 
     def __init__(self, **params):
         super().__init__(**params)
@@ -77,11 +77,12 @@ class Application(param.Parameterized):
 
     def submit_api_key(self, event):
         api_key = self.api_key_input.value
+        print()
         acknowledgment_area = pn.pane.Markdown("")
         # Write API key to .env
         if api_key:
-            with open(".env", "a") as env_file:
-                env_file.write(f"OPENAI_API_KEY={api_key}\n")
+            with open(".env", "w") as env_file:
+                env_file.write(f"OPENAI_API_KEY='{api_key}'\n")
 
             # Display a message to confirm the API key has been stored
             print("API key has been successfully stored in the .env file.")
