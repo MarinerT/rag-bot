@@ -31,5 +31,3 @@ ENV NAME appy
 
 # Run app.py when the container launches
 CMD ["panel", "serve", "app.py", "--port",  "5006", "--address",  "0.0.0.0", "--allow-websocket-origin=*"]
-
-panel serve app.py --port 5006 --address 0.0.0.0 --allow-websocket-origin=*
