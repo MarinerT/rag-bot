@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
@@ -54,10 +54,6 @@ jobs:
 
       # - name: Run tests 
       #   run: pytest ./tests
-
-  build-and-push:
-    runs-on: ubuntu-latest
-    steps:
       - name: Check out the repo
         uses: actions/checkout@v2
 
