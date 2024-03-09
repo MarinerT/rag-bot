@@ -10,8 +10,7 @@ def initialize_api_dependent_components(api_key, pdf_doc):
     cb = cbfs(pdf_doc=pdf_doc)
     file_input = pn.widgets.FileInput(accept=".pdf")
     button_load = pn.widgets.Button(name="Load DB", button_type="primary")
-    button_clearhistory = pn.widgets.Button(
-        name="Clear History", button_type="warning")
+    button_clearhistory = pn.widgets.Button(name="Clear History", button_type="warning")
     button_clearhistory.on_click(cb.clr_history)
     inp = pn.widgets.TextInput(placeholder="Enter text here…")
     button_submit = pn.widgets.Button(name="Submit")
@@ -65,8 +64,7 @@ class Application(param.Parameterized):
     api_key_input = pn.widgets.PasswordInput(
         name="API Key", placeholder="Enter your API key here"
     )
-    submit_button = pn.widgets.Button(
-        name="Submit API Key", button_type="primary")
+    submit_button = pn.widgets.Button(name="Submit API Key", button_type="primary")
     status_message = pn.pane.Markdown("Enter API Key to unlock full features.")
     main_container = pn.Column()  # Container for dynamic content
 

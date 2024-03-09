@@ -67,12 +67,12 @@ Exploring Further
 1. Search types: similarity v mmr.
 2. chain types: stuff, map_reduce, refine.
 3. introducing compression just for the sake of demonstrating it.
-4. Re-engineering the prompt. The results are pretty bad, and I think some basic prompt engineering will do wonders. 
+4. Re-engineering the prompt. The results aren't the most accurate, and I think some basic prompt engineering will improve it. 
 5. creating panels exploring llm evaluations using rouge and bleu (also more so for comprehension demo purposes), possibly also the RLHF v PPO concepts.
 6. introducing open-source models.
 7. fine-tuning those os models, exploring more into optimizing them with quantization and distillation.
 8. I understand the concept of KL Divergence, but it stops there. I'd like to be able to speak about/implement it intelligently in LLM evaluation.
 9. add colors.
-10. add testing.
+10. add more complete code testing.
 11. add the multiquery approach.
 
