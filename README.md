@@ -1,11 +1,11 @@
 ## Chat with a Document
 
 
-Slight modifications to DeepLearnin.ai's course "Langchain chat with your data" https://learn.deeplearning.ai/courses/langchain-chat-with-your-data/lesson/1/introduction, this notebook creates a chatbot with my resume (or really any similar style pdf you like). 
+Slight modifications to DeepLearnin.ai's course "Langchain chat with your data" https://learn.deeplearning.ai/courses/langchain-chat-with-your-data/lesson/1/introduction, this notebook creates a chatbot with my resume (or really any similar style pdf you like).
 
 
 Running the App
---------------------
+----------------
 
 1. In a terminal:
     ```
@@ -74,6 +74,5 @@ Exploring Further
 8. I understand the concept of KL Divergence, but it stops there. I'd like to be able to speak about/implement it intelligently in LLM evaluation.
 9. add colors.
 10. add testing.
-11. develop a pipeline I can actually share.
-12. add the multiquery approach.
+11. add the multiquery approach.
 
