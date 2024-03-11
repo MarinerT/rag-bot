@@ -3,6 +3,12 @@
 
 Slight modifications to DeepLearnin.ai's course "Langchain chat with your data" https://learn.deeplearning.ai/courses/langchain-chat-with-your-data/lesson/1/introduction, this notebook creates a chatbot with my resume (or really any similar style pdf you like).
 
+What it'll look like
+--------------------
+Initial Screen prompt for an OpenAI API Key
+<img src="img/initial_screen.png" alt="prompt screen" title="Initial Screen" width="300" height="300">
+
+<img src="img/chat_screen.png" alt="caht screen" title="Chat Screen" width="300" height="300">
 
 Running the App
 ----------------
