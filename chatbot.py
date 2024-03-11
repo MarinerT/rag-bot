@@ -41,7 +41,7 @@ def load_db(file, chain_type, k):
     retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": k})
     # create a chatbot chain. Memory is managed externally.
     qa = ConversationalRetrievalChain.from_llm(
-        llm=ChatOpenAI(model_name=llm_name, temperature=0),
+        llm=ChatOpenAI(model_name=llm_name, temperature=0, api_key=openai.api_key),
         chain_type=chain_type,
         retriever=retriever,
         return_source_documents=True,
