@@ -8,6 +8,7 @@ What it'll look like
 Initial Screen prompt for an OpenAI API Key
 <img src="img/initial_screen.png" alt="prompt screen" title="Initial Screen" width="300" height="300">
 
+Chat Screen
 <img src="img/chat_screen.png" alt="caht screen" title="Chat Screen" width="300" height="300">
 
 Running the App
